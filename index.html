@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Guess The Number Challenge</h1>
+        <p>Guess a number between 1 and 100!</p>
+
+        <div class="dashboard">
+            <span>Attempts: <strong id="attempts">0</strong></span>
+            <span>Score: <strong id="score">100</strong></span>
+        </div>
+
+        <input
+            type="number"
+            id="guessInput"
+            min="1"
+            max="100"
+            placeholder="Enter your guess"
+        >
+
+        <button id="guessBtn">Submit Guess</button>
+        <button id="restartBtn">Restart Game</button>
+
+        <p id="message">Let's start guessing!</p>
+
+        <button id="voiceBtn">🔊 Voice Assistant</button>
+
+        <h3>Live Commentary</h3>
+        <div id="history">Your game updates will appear here.</div>
+
+        <h3>Feedback</h3>
+        <textarea id="feedback" placeholder="Share your feedback..."></textarea>
+        <button id="feedbackBtn">Submit Feedback</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
